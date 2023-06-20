@@ -385,6 +385,8 @@ $dompdf=new Dompdf;
 $dompdf->loadhtml($html);
 $dompdf->render();
  $pdfContent = $dompdf->output();
+//if we have to generate only pdf then
+//$dompdf->stream("invoice.pdf",["Attachment"=>0]);
 
 
 
